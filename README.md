@@ -18,7 +18,7 @@
 
 <br>
 
-<!-- Replace with your demo GIF: <img src="docs/demo.gif" width="100%" alt="sfmcp demo in Claude Desktop"> -->
+<img src="docs/demodemo.gif" width="100%" alt="sfmcp demo in Claude Desktop">
 
 </div>
 
