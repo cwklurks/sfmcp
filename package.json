@@ -1,0 +1,51 @@
+{
+  "name": "sfmcp",
+  "version": "1.0.0",
+  "description": "MCP server for justmovetosf.com — SF relocation resources for founders",
+  "type": "module",
+  "main": "dist/index.js",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "san-francisco",
+    "relocation",
+    "startup",
+    "claude",
+    "ai-assistant"
+  ],
+  "author": "Connor K",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cwklurks/sfmcp.git"
+  },
+  "files": [
+    "dist/",
+    "data/"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/tsc",
+    "start": "node dist/index.js",
+    "dev": "./node_modules/.bin/tsc --watch",
+    "test": "./node_modules/.bin/vitest run",
+    "test:watch": "./node_modules/.bin/vitest",
+    "test:coverage": "./node_modules/.bin/vitest run --coverage",
+    "seed": "npx tsx scripts/seed.ts",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.0",
+    "cheerio": "^1.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
